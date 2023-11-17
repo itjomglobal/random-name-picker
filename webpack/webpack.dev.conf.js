@@ -33,7 +33,7 @@ module.exports = merge(baseWebpackConfig, {
     chunkFilename: 'assets/js/[name].chunk.js'
   },
   devServer: {
-    host: '0.0.0.0',
+    host: 'all',
     port: 8888,
     watchFiles: ['src/**/*'],
     client: {
