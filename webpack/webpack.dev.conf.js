@@ -35,7 +35,7 @@ module.exports = merge(baseWebpackConfig, {
   devServer: {
     host: '0.0.0.0',
     port: 8888,
-    allowedHosts: ['https://random-name-picker-trial.onrender.com/'],
+    allowedHosts: ['random-name-picker-trial.onrender'],
 
     watchFiles: ['src/**/*'],
     client: {
