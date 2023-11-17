@@ -33,14 +33,15 @@ module.exports = merge(baseWebpackConfig, {
     chunkFilename: 'assets/js/[name].chunk.js'
   },
   devServer: {
-    // host: 'all',
-    // port: 8888,
-    // watchFiles: ['src/**/*'],
-    // client: {
-    //   overlay: {
-    //     warnings: false,
-    //     errors: true
-    allowedHosts: "all"
+    host: '0.0.0.0',
+    port: 8888,
+    allowedHosts: ['https://random-name-picker-trial.onrender.com/'],
+
+    watchFiles: ['src/**/*'],
+    client: {
+      overlay: {
+        warnings: false,
+        errors: true
       }
     }
   },
